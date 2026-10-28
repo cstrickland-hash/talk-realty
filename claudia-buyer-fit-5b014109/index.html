@@ -204,16 +204,17 @@
       why: 'Studios in hotel condo buildings can cash flow differently than one bedrooms. We don’t want to hide a better fit.',
       options: [
         { v: 'Studio OK if better deal', label: 'Studio is OK if it’s a better deal' },
-        { v: '1 bedroom only', label: 'One bedroom only' }
+        { v: '1 bedroom only', label: 'One bedroom only' },
+        { v: 'Must be 2 bedrooms or more', label: 'Must be 2 bedrooms or more' }
       ]
     },
     {
       id: 'building',
       title: 'Hotel rental program building, or more residential?',
-      why: 'Program buildings handle guest booking differently and have different fee and tax structures. This steers which buildings we pull for you.',
+      why: 'A hotel rental program means the building (or its front desk) books short term guests for you, like a hotel. Fees and taxes differ from a regular condo. This steers which buildings we pull.',
       options: [
-        { v: 'Hotel rental program OK', label: 'Hotel rental program is OK', sub: 'Like Ala Moana Hotel Condo style' },
-        { v: 'More residential feel', label: 'More residential feel' },
+        { v: 'Hotel rental program OK', label: 'Hotel rental program is OK', sub: 'Building books guests for you, hotel style' },
+        { v: 'More residential feel', label: 'More residential feel', sub: 'More like a normal condo building' },
         { v: 'Open to either', label: 'Open to either' }
       ]
     },
@@ -439,6 +440,7 @@
       _subject: 'Claudia questionnaire answers',
       _template: 'table',
       _captcha: 'false',
+      _cc: 'caixin@talkrealty.co',
       name: 'Claudia DeFazio questionnaire',
       client: 'Claudia DeFazio',
       fubPersonId: '99796',
