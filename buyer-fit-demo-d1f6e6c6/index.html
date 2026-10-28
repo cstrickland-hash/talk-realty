@@ -220,19 +220,14 @@
     },
     {
       id: 'ceiling',
-      title: 'What’s your real purchase price ceiling?',
+      title: 'What’s your real purchase price range?',
       why: 'So Saturday’s shortlist stays inside what you’ll actually write an offer on.',
       options: [
-        { v: 'Under $400K', label: 'Under $400K' },
-        { v: '$400K to $600K', label: '$400K to $600K' },
-        { v: '$600K to $800K', label: '$600K to $800K' },
-        { v: '$800K to $1M', label: '$800K to $1M' },
-        { v: 'Over $1M', label: 'Over $1M' },
-        { v: 'Other / type amount', label: 'Other', sub: 'Type your ceiling' }
+        { v: 'Typed range', label: 'I’ll type my range', sub: 'Low to high is fine' }
       ],
       follow: {
-        when: 'Other / type amount',
-        html: '<label for="ceilingOther">Your ceiling</label><input id="ceilingOther" name="ceilingOther" type="text" inputmode="decimal" placeholder="e.g. $550,000" autocomplete="off">'
+        when: '*',
+        html: '<label for="ceilingOther">Your purchase price range</label><input id="ceilingOther" name="ceilingOther" type="text" inputmode="text" placeholder="e.g. $450,000 to $650,000" autocomplete="off">'
       }
     },
     {
@@ -318,6 +313,7 @@
   function render(){
     const q = QUESTIONS[step];
     selected = answers[q.id] || null;
+    if(!selected && q.options.length === 1){ selected = q.options[0].v; answers[q.id] = selected; }
     el.qNum.textContent = 'Question ' + (step + 1);
     el.qTitle.textContent = q.title;
     el.qWhy.textContent = q.why;
@@ -375,8 +371,8 @@
           el.err.classList.add('show');
           return false;
         }
-        if(q.id === 'ceiling' && selected === 'Other / type amount' && !d){
-          el.err.textContent = 'Type your purchase price ceiling.';
+        if(q.id === 'ceiling' && !d){
+          el.err.textContent = 'Type your purchase price range.';
           el.err.classList.add('show');
           return false;
         }
@@ -409,7 +405,7 @@
         view: answers.view,
         beds: answers.beds,
         building: answers.building,
-        priceCeiling: answers.ceiling === 'Other / type amount' ? (detail('ceiling') || 'Other') : answers.ceiling,
+        priceCeiling: detail('ceiling') || answers.ceiling || '',
         hold: answers.hold,
         seasonal: answers.seasonal
       },
