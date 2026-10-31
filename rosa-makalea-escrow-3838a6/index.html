@@ -94,6 +94,18 @@
   .btn.out{background:var(--card);color:var(--navy);border-color:var(--line2)}
   .cta{display:flex;flex-direction:column;gap:9px;margin-top:8px}
 
+.m1 h3{font-size:1.15rem;margin:14px 0 4px}
+  .m1 p,.m1 li{font-size:.86rem}
+  .m1 ul.docs{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:8px}
+  .m1 ul.docs li{padding:12px;border-radius:14px;border:1px solid var(--line);background:var(--paper)}
+  .m1 ul.docs b{display:block;color:var(--ink);font-size:.9rem}
+  .flag{padding:12px;border-radius:14px;background:var(--coral-wash);border:1px solid color-mix(in srgb,var(--coral) 25%,transparent);margin-top:12px;font-size:.86rem}
+  .flag b{color:var(--coral)}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+  .facts div{background:var(--teal-wash);border-radius:12px;padding:10px;text-align:center}
+  .facts .n{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--ink);line-height:1.1}
+  .facts .l{font-size:.68rem;color:var(--mute);font-weight:600}
+  video{width:100%;border-radius:14px;margin-top:10px;background:#000}
   footer{padding:28px 0 48px;text-align:center}
   footer .fine{font-size:.72rem;color:var(--mute);max-width:420px;margin:10px auto 0;line-height:1.5}
 </style>
@@ -139,7 +151,7 @@
           <span class="num">2</span>
           <div>
             <strong>Sign the seller disclosure (SRPDS) approval · by Mon Nov 2</strong>
-            <span>You and Christopher went over the disclosure ✓. Christine is sending the approval for your signature. Please sign it when it arrives, before Mon Nov 2.</span>
+            <span>You and Christopher went over the disclosure ✓. Christine sent the approval out for signatures today (Oct 30). Please sign it when it lands in your inbox, before Mon Nov 2.</span>
           </div>
         </li>
         <li>
@@ -151,6 +163,13 @@
         </li>
         <li>
           <span class="num">4</span>
+          <div>
+            <strong>Review the Ewa by Gentry (M-1) documents · by Fri Nov 6</strong>
+            <span>Watch for Christine’s DocuSign receipt (it just confirms you got them). Then look over the <a href="#m1">quick summary and video below</a>, and call Christopher with any questions.</span>
+          </div>
+        </li>
+        <li>
+          <span class="num">5</span>
           <div>
             <strong>Stay in touch with Huyen (lender)</strong>
             <span>She’ll guide loan steps, appraisal timing, and anything FHA needs before closing.</span>
@@ -182,7 +201,7 @@
         </li>
         <li>
           <span class="dot now" aria-hidden="true">!</span>
-          <div><div class="t">Seller disclosures (SRPDS)</div><div class="d">Received Oct 26 · receipt signed Oct 28 ✓ · reviewed with Christopher ✓ · sign the approval by Mon Nov 2</div></div>
+          <div><div class="t">Seller disclosures (SRPDS)</div><div class="d">Received Oct 26 · receipt signed Oct 28 ✓ · reviewed with Christopher ✓ · approval sent for signatures Oct 30 ✓ · sign by Mon Nov 2</div></div>
         </li>
         <li>
           <span class="dot now" aria-hidden="true">!</span>
@@ -194,7 +213,7 @@
         </li>
         <li>
           <span class="dot now" aria-hidden="true">!</span>
-          <div><div class="t">Condo docs</div><div class="d">Terrazza set delivered Oct 29 ✓ · Ewa by Gentry master association set emailed to you Oct 30 ✓ · watch for Christine’s DocuSign receipt and sign by Sun Nov 1 · review Terrazza by Thu Nov 5 and Ewa by Gentry by Fri Nov 6</div></div>
+          <div><div class="t">Condo docs</div><div class="d">Terrazza set delivered Oct 29 ✓ · Ewa by Gentry (M-1) master association set emailed to you Oct 30 ✓ (<a href="#m1">plain English summary below</a>) · watch for Christine’s DocuSign receipt and sign by Sun Nov 1 · review Terrazza by Thu Nov 5 and Ewa by Gentry by Fri Nov 6</div></div>
         </li>
         <li>
           <span class="dot now" aria-hidden="true">!</span>
@@ -210,6 +229,34 @@
         </li>
       </ul>
       <p class="note" style="margin-top:12px">Dates can shift a little as loan, appraisal, and escrow finish their work. We’ll keep this page current. <em>Last updated Oct 30, 2026 (Hawaii).</em></p>
+    </div>
+
+    <div class="card m1" id="m1">
+      <span class="pill next">Review by Fri Nov 6</span>
+      <h2>Ewa by Gentry (M-1) association documents</h2>
+      <p>Your home is part of two associations: Terrazza (your condo association) and the larger <b>Ewa by Gentry Community Association</b>, the master association for the whole neighborhood. The “M-1” documents are that master association’s official package: its rules, budget, savings, and insurance. Here’s the short version.</p>
+      <video controls preload="metadata" playsinline src="rosa-m1-breakdown.mp4"></video>
+      <p class="note">Quick video walkthrough from Christopher (about 1.5 minutes).</p>
+      <div class="facts">
+        <div><div class="n">$165</div><div class="l">2026 master dues, per quarter*</div></div>
+        <div><div class="n">78.3%</div><div class="l">Reserve fund strength (“strong”)</div></div>
+        <div><div class="n">$0</div><div class="l">Special assessments listed</div></div>
+        <div><div class="n">None</div><div class="l">Lawsuits listed</div></div>
+      </div>
+      <p class="note">*The project form lists “the approved dues increase for 2026 in the amount of $165 quarterly.” Christopher will confirm with escrow exactly what you’ll pay on top of your Terrazza fee.</p>
+      <h3>Each document in plain English</h3>
+      <ul class="docs">
+        <li><b>Budget (2026)</b>About $5.6M in yearly dues across the community. It pays for grounds and landscaping, the community centers and pools, security patrol, staff, and events. About $785K a year goes into savings (reserves).</li>
+        <li><b>Reserve study</b>The savings account for big future repairs is 78.3% funded, which the study rates as “strong” with a low risk of special assessments. It recommends raising savings to $56,700 a month to move toward 100%.</li>
+        <li><b>Special assessments &amp; litigation</b>Both say “not available or not applicable,” and the project form shows no assessments or loans in effect and nothing due at closing.</li>
+        <li><b>Rules &amp; regulations (house rules)</b>Pets: a reasonable number of household pets is allowed if they aren’t a nuisance, kept under control outside, with waste picked up. No breed or size limits are listed (Terrazza may have its own rules). Parking: no parking on lawns, the garage or carport must be used for at least one vehicle, and cars on view must be registered and running. Holiday decorations: up no sooner than 15 days before and down within 15 days after. Tarps used as covers are not allowed. If you ever rent the home, tenants must be registered with the association ($100 fine if not).</li>
+        <li><b>Insurance summary</b>The association carries property, liability, and officer coverage, mostly renewing 12/31/26. This covers common areas, not the inside of your home.</li>
+        <li><b>Project info form (RR105c)</b>About 81% of homes are owner occupied. Owner and reserve funds are kept in separate accounts.</li>
+        <li><b>Financial statements &amp; meeting minutes</b>The board’s monthly numbers and meeting notes. Good background reading, nothing you need to sign.</li>
+        <li><b>Declaration (CC&amp;Rs), bylaws, articles, design guidelines, resolutions</b>The founding legal rules. The design guidelines matter if you ever change the outside (paint, fences, solar): get approval first.</li>
+      </ul>
+      <div class="flag"><b>Worth a look:</b> the project form lists about $454,903 in late owner dues across the community (the budget already sets aside an allowance for this). The association’s wind and hail insurance deductible is 3% (about $185,534). Neither changes your contract, but ask Christopher if you’d like them explained.</div>
+      <p class="note" style="margin-top:12px">You’ll get a DocuSign receipt from Christine confirming you received these. Questions? <a href="tel:+18083204509">Call Christopher at (808) 320-4509</a>. This is a friendly summary, not legal advice. For legal questions about the documents, please talk with a real estate attorney.</p>
     </div>
 
     <div class="card">
